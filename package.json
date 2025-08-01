@@ -1,0 +1,33 @@
+{
+  "name": "unite-defi-1inch-ethglobal-back",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "deploy": "caprover deploy --caproverUrl <> --appToken <> --appName <>"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bn.js": "^5.2.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.14.0",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "@types/node-cron": "^3.0.11",
+    "@types/sqlite3": "^3.1.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}

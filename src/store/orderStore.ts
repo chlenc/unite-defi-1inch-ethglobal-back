@@ -40,8 +40,8 @@ class OrderStore {
     return false;
   }
 
-  getAllOrders(): Order[] {
-    return this.orders;
+  getPendingOrders(): Order[] {
+    return this.orders.filter((order) => order.status === "pending");
   }
 
   private static instance: OrderStore;
